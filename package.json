@@ -4,13 +4,9 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "lint": "turbo lint"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
-    "prettier": "^3.2.5",
     "turbo": "latest"
   },
   "engines": {
@@ -19,6 +15,10 @@
   "packageManager": "npm@8.19.4",
   "workspaces": [
     "apps/*",
-    "packages/*"
-  ]
+    "packages/*",
+    "config/*"
+  ],
+  "dependencies": {
+    "@casl/ability": "^6.7.1"
+  }
 }
