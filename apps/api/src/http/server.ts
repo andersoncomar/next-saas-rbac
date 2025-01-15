@@ -117,6 +117,6 @@ app.register(getPendingInvites)
 
 app.register(getOrganizationBilling)
 
-app.listen({ port: env.SERVER_PORT }).then(() => {
-  console.log(`HTTP server running in Port ${env.SERVER_PORT}`)
+app.listen({ port: env.PORT }).then(() => {
+  console.log(`HTTP server running in Port ${env.PORT}`)
 })
